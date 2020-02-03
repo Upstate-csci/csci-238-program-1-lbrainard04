@@ -29,8 +29,10 @@ int main(int argv, char **argc)
             cout << money.processChange() << endl;
         else if (command.compare("float") == 0)
             cout << money.processFloat();
+        /*
         else if (command.compare("check") == 0)
             cout << money.processCheck();
+       */
         else if (command.compare("change-float") == 0)
             cout << money.processChangeFloat();
         else if (command.compare("change-change") == 0)
@@ -38,7 +40,7 @@ int main(int argv, char **argc)
         else {
             cout << "invalid command: " + command;
             return 1;
-        } 
+        }
         cin >> command;
     }
 }

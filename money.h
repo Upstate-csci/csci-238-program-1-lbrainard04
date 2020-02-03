@@ -11,6 +11,7 @@
 #include <sstream>
 #include <iomanip>
 #include <fstream>
+#include <locale>
 
 using namespace std;
 class Money
@@ -23,7 +24,7 @@ public:
     string toCurrency(double amount);
     string processChange();
     string processFloat();
-    string processCheck();
+    //string processCheck();
     string processChangeFloat();
     string processChangeChange();
 };
